@@ -16,10 +16,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            gameObject.transform.rotation(0, -90, 0);
-        }
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject AtaqueInstanciada = Instantiate(attack, PuntoDisparo.position, PuntoDisparo.rotation);
